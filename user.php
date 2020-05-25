@@ -16,7 +16,7 @@
 	$sql = "INSERT INTO `user`(`id`, `username`, `password`, `email`, `sex`, `tel`, `addr`) VALUES ('','".$username."','".$password."','".$email."','herr' , '".$tele."','nurnberg')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "New record created successfully";//databank connet
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
